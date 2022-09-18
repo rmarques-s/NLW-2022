@@ -19,11 +19,6 @@ body * {
   line-height: 160%;
 }
 
-header img {
-  width: 100%;
-  border-radius: 50%;
-}
-
 header {
   margin-top: 32px;
   height: calc(120px + 32px);
@@ -41,6 +36,15 @@ header div {
   border-radius: 50%;
   display: flex;
   padding: 4px;
+  transition: transform 0.3s;
+}
+
+header div:hover {
+  transform: scale(1.1);
+}
+header div img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 main {
@@ -49,7 +53,6 @@ main {
   margin: 32px auto;
   display: grid;
   gap: 24px;
-
 }
 
 section {
